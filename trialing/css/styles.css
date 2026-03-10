@@ -2,6 +2,7 @@
   font-family: "Zen Dots", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 50px;
 }
 
 .nav-font{
@@ -12,12 +13,18 @@
 }
 
 header{
-    width: 1000px;
-    margin: 0 auto;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 #upper-header{
-    width: 100%;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#tropius{
+
 }
