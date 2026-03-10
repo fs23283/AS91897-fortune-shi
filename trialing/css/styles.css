@@ -10,3 +10,14 @@
   font-weight: 400;
   font-style: normal;
 }
+
+header{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#upper-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
