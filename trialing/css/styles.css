@@ -25,21 +25,37 @@ header{
   display: flex;
   align-items: center;
   margin: 0 auto;
-  justify-content: center;
   margin-top: -40px;
   margin-bottom: -50px;
   background-image: linear-gradient(to top, #464646, #313131);
 }
 
 #tropius{
-  margin-right: 60px;
   width: 190px;
+  object-fit: cover;
+}
+
+#tropius-div,#metagross-div,#title{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+#tropius-div{
+  justify-content: flex-end;
+}
+
+#metagross-div{
+  justify-content: flex-start;
+}
+
+#title{
+  justify-content: center;
 }
 
 #metagross{
-  margin-left: 60px;
   width: 280px;
-  margin-top: 10px;
+  object-fit: cover;
 }
 
 nav{
