@@ -84,11 +84,19 @@ nav ul li{
   padding: 10px 20px;
 }
 
-nav ul li img{
+nav ul li:hover{
+  background-color: #414141;
+}
+
+nav ul li a img{
   width: 20px;
+  margin-right: 10px;
 }
 
 nav ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: white;
   text-shadow: black 1px 0px 2px;
