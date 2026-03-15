@@ -67,3 +67,20 @@ nav ul li a{
 body{
   margin: 0 auto;
 }
+
+.nav-text{
+  display: none;
+  position: absolute;
+  transform: translateY(50%);
+  transition: 0.5s;
+  background-color: #414141;
+
+}
+
+nav ul li a:hover .nav-text{
+  display: block;
+}
+
+nav ul li:hover .nav-text{
+  display: block;
+}
