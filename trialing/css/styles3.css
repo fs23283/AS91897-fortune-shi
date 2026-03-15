@@ -29,12 +29,16 @@ header{
 }
 
 #image-div{
-  background: url('images/inteleon.png') no-repeat center fixed;
-  width: 100%;
-  height: 100%;
-  margin-top: 84px;
-
+  margin-top: auto;
+  padding: 20px;
 } 
+
+#image-div img{
+  width: 300px;
+  margin-top: 100px;
+  margin-left: -120px;
+  display: block;
+}
 
 nav{
   margin-top: 50px;
@@ -75,7 +79,7 @@ nav ul li a{
 }
 
 body{
-  margin: 0 auto;
+  margin: 0;
 }
 
 .nav-text{
