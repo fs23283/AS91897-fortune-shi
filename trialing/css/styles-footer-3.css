@@ -34,12 +34,9 @@ footer a:hover{
 #middle-footer,#right-footer,#left-footer{
   padding: 0;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   flex: 1;
-}
-
-#middle-footer{
-  border-left: 1px solid #2c2c2c;
-  border-right: 1px solid #2c2c2c;
 }
 
 footer ul li{
@@ -48,4 +45,12 @@ footer ul li{
 
 footer ul{
   padding: 0;
+}
+
+#left-footer-top{
+  padding-top: 5px;
+}
+
+#right-footer ul{
+  display: flex;
 }
