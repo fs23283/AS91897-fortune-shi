@@ -31,12 +31,11 @@ footer a:hover{
   text-decoration: underline;
 }
 
-#middle-footer,#right-footer,#left-footer{
+#right-footer,#left-footer,#middle-footer{
   padding: 0;
   text-align: center;
   justify-content: center;
   align-items: center;
-  flex: 1;
 }
 
 footer ul li{
@@ -53,4 +52,12 @@ footer ul{
 
 #right-footer ul{
   display: flex;
+}
+
+#right-footer ul li{
+  width: 50px;
+}
+
+#right-footer ul li p{
+  width: 50%;
 }
