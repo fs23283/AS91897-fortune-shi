@@ -9,7 +9,6 @@
 
 .nav-font{
   font-family: "Vend Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
@@ -88,7 +87,6 @@ nav ul li{
 }
 
 nav ul li:hover{
-  /*background-color: #3cbdec;*/
   background-color: #3f3f3f;
 }
 
