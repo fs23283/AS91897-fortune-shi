@@ -34,3 +34,12 @@ footer a:hover{
 footer a{
   margin-left: auto;
 }
+
+ul{
+  display: flex;
+}
+
+ul li{
+  list-style-type: none;
+  padding-right: 30px;
+}
