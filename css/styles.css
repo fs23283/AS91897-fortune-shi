@@ -5,6 +5,7 @@
   font-size: 70px;
   color: #3cbdec;
   text-shadow: black 2px 2px 2px;
+  margin-top: 65px;
 }
 
 .nav-font{
@@ -46,8 +47,8 @@ header{
 }
 
 #greninja{
-  margin-top: 50px;
-  width: 350px;
+  margin-top: 55px;
+  width: 380px;
   margin-right: -50px;
 }
 
@@ -72,8 +73,8 @@ header{
 }
 
 #zeraora{
-  width: 350px;
-  margin-top: 140px;
+  width: 380px;
+  margin-top: 160px;
   margin-left: -80px;
   object-fit: cover;
 }
@@ -83,6 +84,7 @@ nav{
   display: flex;
   margin: 0 auto;
   height: 80px;
+  margin-top: 10px;
 }
 
 nav ul{
@@ -94,7 +96,7 @@ nav ul{
   list-style: none;
   gap: 50px;
   padding: 0;
-  background-image: linear-gradient(to bottom, #575757, #565656);
+  background-image: linear-gradient(to bottom, #5e5e5e, #555555);
 }
 
 nav ul li{
@@ -119,13 +121,7 @@ nav ul li a{
   justify-content: center;
   text-decoration: none;
   color: white;
-  text-shadow: black 1px 0px 2px;
-}
-
-body{
-  margin: 0 auto;
-  width: 100%;
-  position: absolute;
+  text-shadow: black 1px 0 2px;
 }
 
 .roboto{
@@ -170,8 +166,8 @@ footer ul li{
   width: 1300px;
   background-color: white;
   margin: 0 auto;
-  border-radius: 4px;
-  margin-top: -10px;
+  border-radius: 4px 4px 0 0;
+  margin-top: 0;
 }
 
 body{
@@ -179,6 +175,10 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  height: 100%;
 }
 
 #content{
