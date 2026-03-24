@@ -13,6 +13,22 @@
   font-style: normal;
 }
 
+.roboto-p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  margin: 0;
+}
+
+.roboto-h1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  margin: 0;
+}
+
 header{
   width: 100%;
   margin: 0 auto;
@@ -148,4 +164,23 @@ footer ul{
 footer ul li{
   list-style-type: none;
   padding-right: 30px;
+}
+
+#main-content{
+  width: 1300px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-top: -10px;
+}
+
+body{
+  background-image: url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#content{
+  padding: 20px;
 }
