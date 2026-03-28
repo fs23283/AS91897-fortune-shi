@@ -263,6 +263,7 @@ body{
   border-radius: 4px;
 }
 
-#evolution-text ul{
-  list-style-type: disc;
+#li-padding{
+  display: none;
+  padding-bottom: 10px;
 }
