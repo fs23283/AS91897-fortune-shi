@@ -280,7 +280,7 @@ body{
 #top-left-box {
   position: relative;
   background: linear-gradient(135deg, #d6e4f0, #b8d0e3);
-  width: 530px;
+  width: 560px;
   margin-right: 60px;
   border-radius: 4px;
 }
@@ -322,8 +322,8 @@ body{
 
 #bottom-left-box {
   position: relative;
-  background: linear-gradient(135deg, #d6e4f0, #b8d0e3);
-  width: 530px;
+  background: linear-gradient(135deg, #e6d6f5, #cbb4ec);
+  width: 560px;
   margin-right: 60px;
   border-radius: 4px;
 }
@@ -334,7 +334,7 @@ body{
   bottom: 0;
   right: 0;
   width: 400px;
-  height: 400px;
+  height: 500px;
   background: url('../images/background-images/landorussil.png') no-repeat center/contain;
   opacity: 0.04;
   filter: brightness(0);
@@ -347,4 +347,46 @@ body{
   width: 100%;
   padding-top: 1px;
   border-radius: 4px 4px 0 0 ;
+}
+
+#boxes{
+  display: flex;
+}
+
+#top-right-box {
+  position: relative;
+  background: linear-gradient(135deg, #d9f0dc, #b8e0c2);
+  width: 560px;
+  border-radius: 4px;
+}
+
+#top-right-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 500px;
+  background: url('../images/background-images/rayquazasil.png') no-repeat center/contain;
+  opacity: 0.04;
+  filter: brightness(0);
+}
+
+#bottom-right-box {
+  position: relative;
+  background: linear-gradient(135deg, #f5e0c7, #e8c39e);
+  width: 560px;
+  border-radius: 4px;
+}
+
+#bottom-right-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: url('../images/background-images/arceussil.png') no-repeat center/contain;
+  opacity: 0.04;
+  filter: brightness(0);
 }
