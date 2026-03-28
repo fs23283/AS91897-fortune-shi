@@ -42,6 +42,15 @@
   margin-bottom: 15px;
 }
 
+.roboto-h2-center{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+
+  text-align: center;
+}
+
 header{
   width: 100%;
   margin: 0 auto;
@@ -266,4 +275,47 @@ body{
 #li-padding{
   display: none;
   padding-bottom: 10px;
+}
+
+#top-left-box {
+  position: relative;
+  background: linear-gradient(135deg, #d6e4f0, #b8d0e3);
+  width: 530px;
+  margin-right: 60px;
+  border-radius: 4px;
+}
+
+#top-left-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: url('../images/background-images/garchompsil.png') no-repeat center/contain;
+  opacity: 0.04;
+  filter: brightness(0);
+}
+
+#top-left-h2{
+  margin-top: 30px;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.3);
+  width: 100%;
+  padding-top: 1px;
+  border-radius: 4px 4px 0 0 ;
+}
+
+#box-content{
+  padding: 20px;
+}
+
+#box-images{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#box-images img{
+  width: 200px;
 }
