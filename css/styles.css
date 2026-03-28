@@ -319,3 +319,32 @@ body{
 #box-images img{
   width: 200px;
 }
+
+#bottom-left-box {
+  position: relative;
+  background: linear-gradient(135deg, #d6e4f0, #b8d0e3);
+  width: 530px;
+  margin-right: 60px;
+  border-radius: 4px;
+}
+
+#bottom-left-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: url('../images/background-images/landorussil.png') no-repeat center/contain;
+  opacity: 0.04;
+  filter: brightness(0);
+}
+
+#bottom-left-h2{
+  margin-top: 30px;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.3);
+  width: 100%;
+  padding-top: 1px;
+  border-radius: 4px 4px 0 0 ;
+}
