@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StratMon - Mechanics</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&family=Zen+Dots&display=swap" rel="stylesheet">
@@ -12,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"/>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -43,31 +43,137 @@
                 <br>
                 <p class="grey-box-text">Note: We do not own any assets that are used within this website; they are all under the legal control of Game Freak. All rights reserved ©. For more information, navigate to <a href="legal.html" class="text-link">Legal</a></p>
             </div>
-            <section class="gallery">
-                <a href=""></a>
-            </section>
-            <h2 class="roboto-h2">Brief history outline</h2>
-            <p class="roboto-p">The website 'Pokemon Showdown' was originally developed by a small creator, Guagcong "Zarel" Luo in 2011. He was inspired by his experience on an older simulator called Pokemon Online. The purpose of 'Pokemon Showdown' was to create a bug-free simulator, encompassing all mechanics for all Pokemon generations, in which users can simulate battles.</p>
-            <img src="images/pokemonshowdown-main.png" alt="pokemonshowdown-main" id="main-image">
-            <p class="description">Image sourced from <a href="https://pokemonshowdown.com/" target="_blank" class="text-link">Pokemon Showdown</a> for more information read <a href="" class="text-link">Legal</a></p>
-            <div id="evolution">
-                <div id="evolution-text">
-                    <h2 class="roboto-h2">Evolution</h2>
-                    <p class="roboto-p">In 2012, Pokemon Showdown was adopted by <a href="https://www.smogon.com/" class="text-link" target="_blank">Smogon University</a>. This became an official battle simulator for competitive Pokemon ever since, as Smogon has many well-made formats such as Doubles, Anything goes, and offical VGC. Fans have been extremely satisfied with how Smogon has turned out, with many large content creators like <a href="https://www.youtube.com/channel/UC9OZkS1Mhl5UvKSiPrYqsxg" class="text-link" target="_blank">WolfeyVGC</a> consistently commending the game. This creates a close community, where Pokemon fans can passionately battle with their own strategies.</p>
-                    <br>
-                    <p class="roboto-p">To learn more, please navigate to any of the following:</p>
+            <section class="mechanics-section">
+                <div class="mechanics-section-text">
+                    <h2 class="roboto-h2">Hazards</h2>
+                    <p class="roboto-p">Hazards are setup objects you can place on your opponent's field by using specific moves, this includes: </p>
                     <br>
                     <ul class="roboto-p">
-                        <li><a href="rules.html" class="text-link">Rules</a></li>
-                        <li><a href="mechanics.html" class="text-link">Mechanics</a></li>
-                        <li><a href="legal.html" class="text-link">Legal</a></li>
+                        <li>🪨 Stealth Rock/Spikes - Both inflicts damage when foe switches in a pokemon.</li>
+                        <li>🕸️ Sticky Web - Lowers opponent's pokemon by 1 stage upon switch in.</li>
+                        <li>🫟 Toxic Spikes - Poisons/Toxics opponents switch in (depending on 1 or 2 layer).</li>
                     </ul>
+                    <br>
+                    <p class="roboto-p">This is extremely beneficial, as it creates minor disadvantages for your opponent. Hazards can only be removed if you opponent uses moves like Defog, or Rapid Spin.</p>
+                    <br>
+                    <p class="roboto-p">For a more detailed breakdown, visit the offical <a href="https://www.smogon.com/smog/issue44/entry-hazards-in-ou" class="text-link" target="_blank">Smogon University</a> website.</p>
                 </div>
-                <div id="image-main">
-                    <img src="/images/wolfeyvgc.png" alt="WolfeyVGC">
-                    <p class="image-main-description">Image sourced from <a href="https://youtube.fandom.com/wiki/WolfeyVGC" class="text-link" target="_blank">Wikitubia</a></p>
+                <div class="mechanics-section-image">
+                    <a href="images/stealth-rock.png" data-fancybox="pokemon-gallery" data-caption="setup hazard: stealth rock">
+                        <img src="images/stealth-rock.png" alt="stealth-rock" class="roboto-p">
+                        <div class="image-overlay">
+                            <p class="roboto-p">Stealth Rock</p>
+                        </div>
+                    </a> 
                 </div>
-            </div>
+            </section>
+            <section class="mechanics-section">
+                <div class="mechanics-section-image">
+                    <a href="images/quiver-dance.png" data-fancybox="pokemon-gallery" data-caption="stat boost: quiver dance">
+                        <img src="images/quiver-dance.png" alt="quiver-dance" class="roboto-p">
+                        <div class="image-overlay">
+                            <p class="roboto-p">Quiver Dance</p>
+                        </div>
+                    </a> 
+                </div>
+                <div class="mechanics-section-text-2">
+                    <h2 class="roboto-h2">Stats Boost</h2>
+                    <p class="roboto-p">A pokemon can increase/decrease their own stats (reset upon switch-out or switch-in), with moves like:</p>
+                    <br>
+                    <ul class="roboto-p">
+                        <li>⚔️ Swords Dance/Nasty Plot - Raises attack/special attack by 2 stages respectively</li>
+                        <li>🪭 Quiver Dance/Dragon Dance - Increases speed and attack/special attack by 1 stage respectively (Quiver Dance also increases special defense by one stage).</li>
+                        <li>🛡️ Iron Defense/Acid Amor - Raises defense/special defense by 2 stages respectively.</li>
+                    </ul>
+                    <br>
+                    <p class="roboto-p">This is the most crucial part of Pokemon battle simulation, as it sets up a team to sweep the foe.</p>
+                    <br>
+                    <p class="roboto-p"> However, there are moves like Shell Smash, or Close Combat that lower's the user's stats.
+                        For a more detailed breakdown, visit the offical <a href="https://www.smogon.com/smog/issue26/setting_up" class="text-link" target="_blank">Smogon University</a> website.</p>
+                </div>
+            </section>
+            <section class="mechanics-section">
+                <div class="mechanics-section-text">
+                    <h2 class="roboto-h2">Status Effects</h2>
+                    <p class="roboto-p">Status effects can be inflicted on your foe's pokemon permanently (or until it runs out), unless they have a way to remove it.</p>
+                    <br>
+                    <ul class="roboto-p">
+                        <li>💤 Sleep - Pokemon falls asleep and is unable to move for 1-3 turns.</li>
+                        <li>🦥 Paralysis - Foe's speed is halfed, and has a 30% chance to not move each turn.</li>
+                        <li>🔥 Burn - Deals damage each turn, halves, attack physical attack stat.</li>
+                        <li>☢️ Toxic - Toxic does more damage the longer it is inflicted for.</li>
+                        <li>🧊 Freeze - Frozen pokemon is unable to attack until it is thawed.</li>
+                    </ul>
+                    <br>
+                    <p class="roboto-p">This can render a Pokemon useless in battle, reducing options for your opponent. For a more detailed breakdown, visit the offical <a href="https://www.smogon.com/dp/articles/status" class="text-link" target="_blank">Smogon University</a> website.</p>
+                    <br>
+                </div>
+                <div class="mechanics-section-image">
+                    <a href="images/ice-punch.png" data-fancybox="pokemon-gallery" data-caption="status effect: freeze">
+                        <img src="images/ice-punch.png" alt="freeze" class="roboto-p">
+                        <div class="image-overlay">
+                            <p class="roboto-p">Freeze</p>
+                        </div>
+                    </a> 
+                </div>
+            </section>
+            <section id="mechanics-bottom">
+                <h2 class="roboto-h2-center">A Word of Advice</h2>
+                <p class="roboto-p">Never forfeit a game under any circumstance. Because under the condition, a single pokemon can easily sweep an entire team, even when the odds are stacked against you.</p>
+                <br>
+                <p class="roboto-p">Here are some examples...</p>
+                <section id="video-section">
+                    <div id="video-section-left">
+                        <div class="video-card">
+                            <p class="roboto-p-head">Comfey flawless sweep</p>
+                            <div class="mechanics-section-image">
+                                <a href="images/comfey-sweep.mp4" data-fancybox="video-gallery" data-caption="Comfey flawless sweep">
+                                    <img src="images/comfey-sweep-thumbnail.png" alt="comfey-sweep-thumbnail">
+                                    <div class="image-overlay">
+                                        <p class="roboto-p">Comfey flawless sweep</p>
+                                    </div>
+                                </a> 
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <p class="roboto-p-head">Torterra flawless sweep</p>
+                            <div class="mechanics-section-image">
+                                <a href="images/torterra-sweep.mp4" data-fancybox="video-gallery" data-caption="Torterra flawless sweep">
+                                    <img src="images/torterra-sweep-thumbnail.png" alt="torterra-sweep-thumbnail">
+                                    <div class="image-overlay">
+                                        <p class="roboto-p">Torterra flawless sweep</p>
+                                    </div>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div id="middle-line"></div>
+                    <div id="video-section-right">
+                        <div class="video-card">
+                            <p class="roboto-p-head">Comfey flawless sweep</p>
+                            <div class="mechanics-section-image">
+                                <a href="images/comfey-sweep.mp4" data-fancybox="video-gallery" data-caption="Comfey flawless sweep">
+                                    <img src="images/comfey-sweep-thumbnail.png" alt="comfey-sweep-thumbnail">
+                                    <div class="image-overlay">
+                                        <p class="roboto-p">Comfey flawless sweep</p>
+                                    </div>
+                                </a> 
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <p class="roboto-p-head">Torterra flawless sweep</p>
+                            <div class="mechanics-section-image">
+                                <a href="images/torterra-sweep.mp4" data-fancybox="video-gallery" data-caption="Torterra flawless sweep">
+                                    <img src="images/torterra-sweep-thumbnail.png" alt="torterra-sweep-thumbnail">
+                                    <div class="image-overlay">
+                                        <p class="roboto-p">Torterra flawless sweep</p>
+                                    </div>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
         </div>
     </div>
     <footer class="roboto">
@@ -80,7 +186,7 @@
         <a href="legal.html" class="roboto">Legal</a>
     </footer>
 <script>
-      Fancybox.bind("[data-fancybox]", {});
+      Fancybox.bind('[data-fancybox="pokemon-gallery"], [data-fancybox="video-gallery"]', {hideScrollbar: false});
 </script>
 </body>
 </html>
