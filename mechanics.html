@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn basic mechanics of competitive Pokémon battling">
+    <title>StratMon - Mechanics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="upper-header">
+            <div id="greninja-div">
+                <img src="images/greninja.png" alt="Greninja" id="greninja">
+            </div>
+            <div id="title">
+                <h1 class="stratmon">StratMon</h1>
+            </div>
+            <div id="zeraora-div">
+                <img src="images/zeraora.png" alt="Zeraora" id="zeraora">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-font"><a href="index.html"><img src="images/nav-icons/pikachu.png" alt="pikachu-icon">Home</a></li>
+                <li class="nav-font"><a href="rules.html"><img src="images/nav-icons/pokeball.png" alt="pokeball-icon">Rules</a></li>
+                <li class="nav-font" style="background-color: #3f3f3f"><a href="mechanics.html"><img src="images/nav-icons/gear.png" alt="gear-icon">Mechanics</a></li>
+                <li class="nav-font"><a href="legal.html"><img src="images/nav-icons/wrench.png" alt="wrench-icon">Legal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="content">
+            <h2 class="roboto-h1">StratMon - Mechanics</h2>
+            <aside id="grey-box">
+                <p class="grey-box-text">This page will go over basic battling mechanics on - <a href="https://pokemonshowdown.com/" target="_blank" class="text-link">Pokémon Showdown</a>. The aim is for you to instantly jump into a battle, and know how to win.</p>
+                <br>
+                <p class="grey-box-text">Note: We do not own any assets that are used within this website; they are all under the legal control of Game Freak. All rights reserved ©. For more information, navigate to <a href="legal.html" class="text-link">Legal</a></p>
+            </aside>
+            <article class="mechanics-section">
+                <div class="mechanics-section-text">
+                    <h2 class="roboto-h2">Hazards</h2>
+                    <p class="roboto-p">Hazards are setup objects you can place on your opponent's field by using specific moves, this includes: </p>
+                    <br>
+                    <ul class="roboto-p">
+                        <li>🪨 Stealth Rock/Spikes - Both inflicts damage when foe switches in a Pokémon.</li>
+                        <li>🕸️ Sticky Web - Lowers opponent's Pokémon by 1 stage upon switch in.</li>
+                        <li>🫟 Toxic Spikes - Poisons/Toxics opponents switch in (depending on 1 or 2 layer).</li>
+                    </ul>
+                    <br>
+                    <p class="roboto-p">This is extremely beneficial, as it creates minor disadvantages for your opponent. Hazards can only be removed if you opponent uses moves like Defog, or Rapid Spin.</p>
+                    <br>
+                    <p class="roboto-p">For a more detailed breakdown, visit the offical <a href="https://www.smogon.com/smog/issue44/entry-hazards-in-ou" class="text-link" target="_blank">Smogon University</a> website.</p>
+                </div>
+                <figure class="mechanics-section-image">
+                    <a href="images/stealth-rock.png" data-fancybox="pokemon-gallery" data-caption="setup hazard: stealth rock" aria-label="View Stealth Rock image">
+                        <img src="images/stealth-rock.png" alt="stealth-rock" class="roboto-p">
+                        <div class="image-overlay">
+                            <p class="roboto-p">Stealth Rock</p>
+                        </div>
+                    </a> 
+                </figure>
+            </article>
+            <article class="mechanics-section">
+                <figure class="mechanics-section-image">
+                    <a href="images/quiver-dance.png" data-fancybox="pokemon-gallery" data-caption="stat boost: quiver dance" aria-label="View Quiver Dance image">
+                        <img src="images/quiver-dance.png" alt="quiver-dance" class="roboto-p">
+                        <div class="image-overlay">
+                            <p class="roboto-p">Quiver Dance</p>
+                        </div>
+                    </a> 
+                </figure>
+                <div class="mechanics-section-text-2">
+                    <h2 class="roboto-h2">Stats Boost</h2>
+                    <p class="roboto-p">A Pokémon can increase/decrease their own stats (reset upon switch-out or switch-in), with moves like:</p>
+                    <br>
+                    <ul class="roboto-p">
+                        <li>⚔️ Swords Dance/Nasty Plot - Raises attack/special attack by 2 stages respectively</li>
+                        <li>🪭 Quiver Dance/Dragon Dance - Increases speed and attack/special attack by 1 stage respectively (Quiver Dance also increases special defense by one stage).</li>
+                        <li>🛡️ Iron Defense/Acid Amor - Raises defense/special defense by 2 stages respectively.</li>
+                    </ul>
+                    <br>
+                    <p class="roboto-p">This is the most crucial part of Pokémon battle simulation, as it sets up a team to sweep the foe.</p>
+                    <br>
+                    <p class="roboto-p"> However, there are moves like Shell Smash, or Close Combat that lower's the user's stats.
+                        For a more detailed breakdown, visit the offical <a href="https://www.smogon.com/smog/issue26/setting_up" class="text-link" target="_blank">Smogon University</a> website.</p>
+                </div>
+            </article>
+            <article class="mechanics-section">
+                <div class="mechanics-section-text">
+                    <h2 class="roboto-h2">Status Effects</h2>
+                    <p class="roboto-p">Status effects can be inflicted on your foe's Pokémon permanently (or until it runs out), unless they have a way to remove it.</p>
+                    <br>
+                    <ul class="roboto-p">
+                        <li>💤 Sleep - Pokémon falls asleep and is unable to move for 1-3 turns.</li>
+                        <li>🦥 Paralysis - Foe's speed is halved, and has a 30% chance to not move each turn.</li>
+                        <li>🔥 Burn - Deals damage each turn, halves, attack physical attack stat.</li>
+                        <li>☢️ Toxic - Toxic does more damage the longer it is inflicted for.</li>
+                        <li>🧊 Freeze - Frozen Pokémon is unable to attack until it is thawed.</li>
+                    </ul>
+                    <br>
+                    <p class="roboto-p">This can render a Pokémon useless in battle, reducing options for your opponent. For a more detailed breakdown, visit the official <a href="https://www.smogon.com/dp/articles/status" class="text-link" target="_blank">Smogon University</a> website.</p>
+                    <br>
+                </div>
+                <figure class="mechanics-section-image">
+                    <a href="images/ice-punch.png" data-fancybox="pokemon-gallery" data-caption="status effect: freeze" aria-label="View Ice Punch image">
+                        <img src="images/ice-punch.png" alt="freeze" class="roboto-p">
+                        <div class="image-overlay">
+                            <p class="roboto-p">Freeze</p>
+                        </div>
+                    </a> 
+                </figure>
+            </article>
+            <aside id="mechanics-bottom">
+                <h2 class="roboto-h2-center">A Word of Advice</h2>
+                <p class="roboto-p">Never forfeit a game under any circumstance. Because under the condition, a single Pokémon can easily sweep an entire team, even when the odds are stacked against you.</p>
+                <br>
+                <p class="roboto-p">Here are some examples...</p>
+                <section id="video-section">
+                    <section id="video-section-left">
+                        <section class="video-card">
+                            <p class="roboto-p-head">Comfey flawless sweep</p>
+                            <div class="mechanics-section-image">
+                                <a href="https://youtu.be/QuXuhcYlQNY" data-fancybox="video-gallery" data-caption="Sometimes it only takes 1 pokemon and 2 moves to sweep a team." aria-label="View Comfey Video">
+                                    <img src="images/comfey-sweep-thumbnail.png" alt="comfey-sweep-thumbnail">
+                                    <div class="image-overlay">
+                                        <p class="roboto-p">Comfey flawless sweep</p>
+                                    </div>
+                                </a> 
+                            </div>
+                        </section>
+                        <section class="video-card">
+                            <p class="roboto-p-head">Torterra flawless sweep</p>
+                            <div class="mechanics-section-image">
+                                <a href="https://youtu.be/dc27uegHzWE" data-fancybox="video-gallery" data-caption="Sometimes it only takes 1 pokemon and 2 moves to sweep a team." aria-label="View Torterra Video">
+                                    <img src="images/torterra-sweep-thumbnail.png" alt="torterra-sweep-thumbnail">
+                                    <div class="image-overlay">
+                                        <p class="roboto-p">Torterra flawless sweep</p>
+                                    </div>
+                                </a> 
+                            </div>
+                        </section>
+                    </section>
+                    <div id="middle-line"></div>
+                    <section id="video-section-right">
+                        <section class="video-card">
+                            <p class="roboto-p-head">Lycanroc 1v3</p>
+                            <div class="mechanics-section-image">
+                                <a href="https://youtu.be/zWXfNWT--WQ" data-fancybox="video-gallery" data-caption="This shows how close games can get." aria-label="View Lycanroc Video">
+                                    <img src="images/lycanroc-clutch-thumbnail.png" alt="lycanroc-clutch-thumbnail">
+                                    <div class="image-overlay">
+                                        <p class="roboto-p">Lycanroc 1v3</p>
+                                    </div>
+                                </a> 
+                            </div>
+                        </section>
+                        <section class="video-card">
+                            <p class="roboto-p-head">Electrode 1v3</p>
+                            <div class="mechanics-section-image">
+                                <a href="https://youtu.be/pIoOfPqptIs" data-fancybox="video-gallery" data-caption="The Foe forgot about Electrode's terastallize typing." aria-label="View Electrode Video">
+                                    <img src="images/electrode-clutch-thumbnail.png" alt="electrode-clutch-thumbnail">
+                                    <div class="image-overlay">
+                                        <p class="roboto-p">Electrode 1v3</p>
+                                    </div>
+                                </a> 
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </aside>
+        </section>
+    </main>
+    <footer class="roboto">
+        <p class="roboto">StratMon | Developed by Fortune Shi for AS91897</p>
+        <ul>
+            <li><a href="https://www.instagram.com/strat.mon/" target="_blank"><img src="images/socials/instagram.png" alt="instagram"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61574301830272" target="_blank"><img src="images/socials/facebook.png" alt="facebook"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCa7fJdWz7Yc4McVzNPlxFxA" target="_blank"><img src="images/socials/youtube.png" alt="youtube"></a></li>
+        </ul>
+        <a href="legal.html" class="roboto">Legal</a>
+    </footer>
+<script>
+      Fancybox.bind('[data-fancybox="pokemon-gallery"], [data-fancybox="video-gallery"]', {hideScrollbar: false});
+</script>
+</body>
+</html>
