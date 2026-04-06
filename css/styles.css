@@ -18,7 +18,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 17px;
   margin: 0;
 }
 
@@ -292,8 +292,8 @@ body{
 #top-left-box{
   position: relative;
   background: linear-gradient(135deg, #d6e4f0, #b8d0e3);
-  width: 560px;
-  margin-right: 60px;
+  width: 575px;
+  margin-right: 25px;
   border-radius: 4px;
 }
 
@@ -335,8 +335,8 @@ body{
 #bottom-left-box{
   position: relative;
   background: linear-gradient(135deg, #e6d6f5, #cbb4ec);
-  width: 560px;
-  margin-right: 60px;
+  width: 570px;
+  margin-right: 40px;
   border-radius: 4px;
 }
 
@@ -372,8 +372,9 @@ body{
 #top-right-box{
   position: relative;
   background: linear-gradient(135deg, #d9f0dc, #b8e0c2);
-  width: 560px;
+  width: 575px;
   border-radius: 4px;
+  margin-left: -10px;
 }
 
 #top-right-box::after{
@@ -391,7 +392,8 @@ body{
 #bottom-right-box{
   position: relative;
   background: linear-gradient(135deg, #f5e0c7, #e8c39e);
-  width: 560px;
+  width: 570px;
+  margin-left: -10px;
   border-radius: 4px;
 }
 
@@ -530,4 +532,30 @@ figure.mechanics-section-image{
 
 #introduction figure{
   margin: 0;
+}
+
+#bottom-box{
+  position: relative;
+  background: linear-gradient(135deg, #e5e5e5, #cfcfcf);
+  width: 100%;
+  border-radius: 4px;
+}
+
+#bottom-h2{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+#bottom-images img{
+  width: 250px;
+  margin-top: -40px;
+}
+
+#bottom-box-content{
+  padding: 20px;
+  display: flex;
 }
