@@ -18,7 +18,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 17px;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -394,42 +394,59 @@ body{
 }
 
 .mechanics-section{
-  margin-top: 40px;
+  margin-top: 50px;
   display: flex;
+  height: 413px;
 }
 
 .mechanics-section-text{
-  width: 700px;
-  margin-right: 40px;
-  margin-top: -30px;
+  width: 570px;
+  margin-right: 35px;
+  background-image: linear-gradient(135deg, #d6e4f0, #b8d0e3);;
+  border-radius: 4px;
+}
+
+.mechanics-text-box{
+  padding: 20px;
 }
 
 .mechanics-section-text-2{
-  width: 700px;
-  margin-left: 40px;
-  margin-top: -30px;
+  width: 570px;
+  margin-left: 35px;
+  background: linear-gradient(135deg, #d9f0dc, #b8e0c2);
+  border-radius: 4px;
+}
+
+.mechanics-section-text-3{
+  width: 570px;
+  margin-right: 35px;
+  background: linear-gradient(135deg, #f5e0c7, #e8c39e);
+  border-radius: 4px;
 }
 
 
-.mechanics-section-image img{
+.mechanics-section-image img, .video-section-image img{
   width: 100%;
   height: 100%;
   border-radius: 4px;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 }
 
-.mechanics-section-image{
-  box-shadow: 0 0 20px 2px rgb(191, 191, 191);
+.mechanics-section-image, .video-section-image{
+  box-shadow: 0 0 10px 1px rgb(191, 191, 191);
   position: relative;
-  width: 500px;
-  height: 280px;
   overflow: hidden;
   border-radius: 4px; 
 }
 
-.mechanics-section-image:hover img{
-  transform: scale(1.1);
+.mechanics-section-image{
+  width: 570px;
+  height: 413px;
+}
+
+.mechanics-section-image:hover img, .video-section-image:hover img{
+  transform: scale(1.05);
 }
 
 .image-overlay{
@@ -444,10 +461,18 @@ body{
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.3s ease;
 }
 
-.mechanics-section-image:hover .image-overlay{
+.image-overlay p{
+  font-size: 25px;
+}
+
+.video-section-image .image-overlay p{
+  font-size: 15px;
+}
+
+.mechanics-section-image:hover .image-overlay, .video-section-image:hover .image-overlay{
   opacity: 0.5;
 }
 
@@ -456,7 +481,7 @@ body{
 }
 
 #mechanics-bottom{
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -467,21 +492,33 @@ body{
 }
 
 .video-card{
-  width: 500px;
+  width: 250px;
   margin-top: 60px;
+  margin-right: 61px;
+}
+
+.video-card img{
+  margin: 0 auto;
 }
 
 #video-section{
   display: flex;
-  margin-bottom: -15px;
+  margin-top: -20px;
 }
 
 #video-section-left{
-  margin-right: 89px;
+  margin-right: 55px;
+  display: flex;
 }
 
 #video-section-right{
-  margin-left: 89px;
+  margin-left: 55px;
+  display: flex;
+}
+
+.video-section-image{
+  width: 250px;
+  height: 200px;
 }
 
 #middle-line{
@@ -504,7 +541,7 @@ figure.mechanics-section-image{
 }
 
 #introduction, #evolution{
-  margin-top: 20px;
+  margin-top: 30px;
   border: 2px solid rgb(224, 224, 224);
   border-radius: 4px;
   /*box-shadow: 0 0 20px 1px rgb(231, 231, 231);*/
@@ -558,4 +595,50 @@ figure.mechanics-section-image{
 
 #left-box{
   padding-right: 30px;
+}
+
+#mechanics-bottom-text{
+  background: linear-gradient(135deg, #e5e5e5, #cfcfcf);
+  border-radius: 4px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+#mechanics-bottom-text h2{
+  margin-top: 0;
+  text-align: center;
+}
+
+#bottom-text-content{
+  padding: 20px;
+}
+
+.mechanics-h2{
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.3);
+  width: 100%;
+  padding-top: 1px;
+  border-radius: 4px 4px 0 0 ;
+  text-align: left;
+}
+
+.mechanics-h2 h2{
+  padding-top: 20px;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.mechanics-section-text-2 .mechanics-h2 h2{
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+#mechanics-bottom-top{
+  display: flex;
+}
+
+#mechanics-bottom-top img{
+  width: 200px;
+  height: 150px;
 }
