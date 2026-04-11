@@ -1,4 +1,6 @@
-.stratmon{
+/* FONTS ETC ALL SOURCED FROM GOOGLE FONTS */
+
+.stratmon {
   font-family: "Zen Dots", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -8,13 +10,13 @@
   margin-top: 65px;
 }
 
-.nav-font{
+.nav-font {
   font-family: "Vend Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
-.roboto-p{
+.roboto-p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -22,7 +24,7 @@
   margin: 0;
 }
 
-.roboto-p-head{
+.roboto-p-head {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -31,7 +33,7 @@
   text-align: center;
 }
 
-.roboto-h1{
+.roboto-h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -42,7 +44,7 @@
   margin-bottom: 30px;
 }
 
-.roboto-h2{
+.roboto-h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -51,27 +53,124 @@
   margin-bottom: 20px;
 }
 
-.roboto-h2-center{
+.roboto-h2-center {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 22px;
-
   text-align: center;
 }
 
-.f-caption{
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(220, 219, 219);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  margin: 0;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  margin: 0;
+  margin-top: -10px;
+  color: #2b2b2b;
+  text-align: center;
+}
+
+.image-main-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  margin: 0;
+  color: #2b2b2b;
+  text-align: center;
+}
+
+.grey-box-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  margin: 0;
+  color: #2b2b2b;
+}
+
+.text-link {
+  text-decoration: none;
+  color: rgb(0, 110, 255);
+  font-weight: 500;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.f-caption {
   font-family: "Roboto", sans-serif !important;
   font-size: 14px !important;
   color: white !important;
 }
 
-header{
+/* STUFF USED IN EVERY PAGE */
+
+body {
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: round;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+header {
   width: 100%;
   margin: 0 auto;
 }
 
-#upper-header{
+main {
+  width: 1300px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 4px 4px 0 0;
+  margin-top: 0;
+}
+
+#content {
+  padding: 60px;
+}
+
+figcaption {
+  text-align: center;
+}
+
+dt {
+  display: flex;
+}
+
+#li-padding {
+  display: none;
+  padding-bottom: 10px;
+}
+
+/* HEADER */
+
+#upper-header {
   width: 100%;
   height: 200px;
   display: flex;
@@ -82,40 +181,43 @@ header{
   background-image: linear-gradient(to bottom, #525252, #2b2b2b);
 }
 
-#greninja{
+#greninja {
   margin-top: 55px;
   width: 380px;
   margin-right: -50px;
 }
 
-#greninja-div,#zeraora-div,#title{
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-#greninja-div{
-  justify-content: flex-end;
-}
-
-#zeraora-div{
-  justify-content: flex-start;
-
-}
-
-#title{
-  justify-content: center;
-  width: 100%;
-}
-
-#zeraora{
+#zeraora {
   width: 380px;
   margin-top: 160px;
   margin-left: -80px;
   object-fit: cover;
 }
 
-nav{
+#greninja-div,
+#zeraora-div,
+#title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+#greninja-div {
+  justify-content: flex-end;
+}
+
+#zeraora-div {
+  justify-content: flex-start;
+}
+
+#title {
+  justify-content: center;
+  width: 100%;
+}
+
+/* NAV BAR */
+
+nav {
   width: 1300px;
   display: flex;
   margin: 0 auto;
@@ -123,7 +225,7 @@ nav{
   margin-top: 10px;
 }
 
-nav ul{
+nav ul {
   border-radius: 4px;
   width: 100%;
   display: flex;
@@ -135,19 +237,14 @@ nav ul{
   background-image: linear-gradient(to bottom, #5e5e5e, #555555);
 }
 
-nav ul li:hover{
+nav ul li:hover {
   background-color: #3f3f3f;
 }
 
-nav ul li a img{
-  width: 20px;
-  margin-right: 10px;
-}
-
-nav ul li a{
-  padding-left:20px;
-  padding-right:20px;
-  padding-top:12.5px;
+nav ul li a {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12.5px;
   padding-bottom: 12px;
   display: flex;
   align-items: center;
@@ -157,16 +254,14 @@ nav ul li a{
   text-shadow: black 1px 0 2px;
 }
 
-.roboto{
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(220, 219, 219);
-  font-size: 14px;
-  text-decoration: none;
+nav ul li a img {
+  width: 20px;
+  margin-right: 10px;
 }
 
-footer{
+/* FOOTER */
+
+footer {
   margin: 0 auto;
   margin-top: auto;
   border-top: 2px solid #2c2c2c;
@@ -178,254 +273,270 @@ footer{
   background: linear-gradient(to right, #5a5a5a, #3f3f3f);
 }
 
-footer a:hover{
-  text-decoration: underline;
-}
-
-footer a{
+footer a {
   margin-left: auto;
 }
 
-footer ul{
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer ul {
   display: flex;
 }
 
-footer ul li{
+footer ul li {
   list-style-type: none;
   padding-right: 30px;
 }
 
-main{
-  width: 1300px;
-  background-color: white;
-  margin: 0 auto;
-  border-radius: 4px 4px 0 0;
-  margin-top: 0;
-}
+/* CONTENT BOXES AND OTHER UI STUFF */
 
-body{
-  background-image: url('../images/background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: round;
-  margin: 0 auto;
-  width: 100%;
-  position: absolute;
-  height: 100%;
-}
-
-#content{
-  padding: 60px;
-}
-
-#grey-box{
+#grey-box {
   background-color: rgb(238, 238, 238);
   padding: 20px;
   border-radius: 8px;
 }
 
-#main-image{
+#main-image {
   width: 100%;
   border-radius: 4px;
   margin: 10px 0;
 }
 
-.description{
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 10px;
-  margin: 0;
-  margin-top: -10px;
-  color: #2b2b2b;
-}
-
-.grey-box-text{
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  margin: 0;
-  color: #2b2b2b;
-}
-
-.text-link{
-  text-decoration: none;
-  color: rgb(0, 110, 255);
-  font-weight: 500;
-}
-
-.text-link:hover{
-  text-decoration: underline;
-}
-
-.image-main-description{
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 10px;
-  margin: 0;
-  color: #2b2b2b;
-}
-
-#image-main img{
+#image-main img {
   border-radius: 4px;
 }
 
-#li-padding{
-  display: none;
-  padding-bottom: 10px;
+.box-content {
+  padding: 20px;
 }
 
-#top-left-box{
+.box-images {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.box-images img {
+  width: 200px;
+}
+
+/* HOME PAGE */
+
+#introduction,
+#evolution {
+  margin-top: 30px;
+  border: 2px solid rgb(224, 224, 224);
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  /* box-shadow: 0 0 20px 1px rgb(231, 231, 231); */
+}
+
+.home-box-content {
+  display: flex;
+  padding: 20px;
+}
+
+#introduction img,
+#evolution img {
+  margin: 0;
+  width: 300px;
+}
+
+#introduction figure,
+#evolution figure {
+  margin: 0;
+  padding-left: 50px;
+}
+
+#introduction figure figcaption {
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* RULES PAGE */
+
+#boxes {
+  display: flex;
+}
+
+#left-box {
+  padding-right: 30px;
+}
+
+#top-left-box {
   position: relative;
   background: linear-gradient(135deg, #d6e4f0, #b8d0e3);
   width: 575px;
   border-radius: 4px;
 }
 
-#top-left-box::after{
+#top-left-box::after {
   content: "";
   position: absolute;
   bottom: 0;
   right: 0;
   width: 400px;
   height: 400px;
-  background: url('../images/background-images/garchompsil.png') no-repeat center/contain;
+  background: url("../images/background-images/garchompsil.png") no-repeat center/contain;
   opacity: 0.04;
   filter: brightness(0);
 }
 
-.top-left-h2{
-  margin-top: 30px;
-  border-bottom: 2px solid rgba(0,0,0,0.1);
-  background: rgba(255,255,255,0.3);
-  width: 100%;
-  padding-top: 1px;
-  border-radius: 4px 4px 0 0 ;
-}
-
-.box-content{
-  padding: 20px;
-}
-
-.box-images{
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-.box-images img{
-  width: 200px;
-}
-
-#bottom-left-box{
+#bottom-left-box {
   position: relative;
   background: linear-gradient(135deg, #e6d6f5, #cbb4ec);
   width: 575px;
   border-radius: 4px;
 }
 
-#bottom-left-box img{
+#bottom-left-box img {
   margin-top: 18px;
 }
 
-#bottom-left-box::after{
+#bottom-left-box::after {
   content: "";
   position: absolute;
   bottom: 0;
   right: 0;
   width: 400px;
   height: 400px;
-  background: url('../images/background-images/landorussil.png') no-repeat center/contain;
+  background: url("../images/background-images/landorussil.png") no-repeat center/contain;
   opacity: 0.04;
   filter: brightness(0);
 }
 
-#bottom-left-h2{
+#bottom-left-h2 {
   margin-top: 30px;
-  border-bottom: 2px solid rgba(0,0,0,0.1);
-  background: rgba(255,255,255,0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.3);
   width: 100%;
   padding-top: 1px;
-  border-radius: 4px 4px 0 0 ;
+  border-radius: 4px 4px 0 0;
 }
 
-#boxes{
-  display: flex;
-}
-
-#top-right-box{
+#top-right-box {
   position: relative;
   background: linear-gradient(135deg, #d9f0dc, #b8e0c2);
   width: 575px;
   border-radius: 4px;
 }
 
-#top-right-box::after{
+#top-right-box::after {
   content: "";
   position: absolute;
   bottom: 0;
   right: 0;
   width: 400px;
   height: 500px;
-  background: url('../images/background-images/rayquazasil.png') no-repeat center/contain;
+  background: url("../images/background-images/rayquazasil.png") no-repeat center/contain;
   opacity: 0.04;
   filter: brightness(0);
 }
 
-#bottom-right-box{
+#bottom-right-box {
   position: relative;
   background: linear-gradient(135deg, #f5e0c7, #e8c39e);
   width: 575px;
   border-radius: 4px;
 }
 
-#bottom-right-box::after{
+#bottom-right-box::after {
   content: "";
   position: absolute;
   bottom: 0;
   right: 0;
   width: 400px;
   height: 400px;
-  background: url('../images/background-images/arceussil.png') no-repeat center/contain;
+  background: url("../images/background-images/arceussil.png") no-repeat center/contain;
   opacity: 0.04;
   filter: brightness(0);
 }
 
-.mechanics-section{
+.top-left-h2 {
+  margin-top: 30px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  padding-top: 1px;
+  border-radius: 4px 4px 0 0;
+}
+
+#bottom-box {
+  position: relative;
+  background: linear-gradient(135deg, #e5e5e5, #cfcfcf);
+  width: 100%;
+  border-radius: 4px;
+}
+
+#bottom-h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+#bottom-box-content {
+  padding: 20px;
+  display: flex;
+}
+
+#bottom-images img {
+  width: 250px;
+  margin-top: -40px;
+}
+
+/* MECHANICS PAGE */
+
+.mechanics-section {
   margin-top: 50px;
   display: flex;
   height: 413px;
 }
 
-.mechanics-section-text{
+.mechanics-section-text {
   width: 570px;
   margin-right: 35px;
-  background-image: linear-gradient(135deg, #d6e4f0, #b8d0e3);;
+  background-image: linear-gradient(135deg, #d6e4f0, #b8d0e3);
   border-radius: 4px;
 }
 
-.mechanics-text-box{
-  padding: 20px;
-}
-
-.mechanics-section-text-2{
+.mechanics-section-text-2 {
   width: 570px;
   margin-left: 35px;
   background: linear-gradient(135deg, #d9f0dc, #b8e0c2);
   border-radius: 4px;
 }
 
-.mechanics-section-text-3{
+.mechanics-section-text-3 {
   width: 570px;
   margin-right: 35px;
   background: linear-gradient(135deg, #f5e0c7, #e8c39e);
   border-radius: 4px;
 }
 
+.mechanics-text-box {
+  padding: 20px;
+}
 
-.mechanics-section-image img, .video-section-image img{
+.mechanics-section-image,
+.video-section-image {
+  box-shadow: 0 0 10px 1px rgb(191, 191, 191);
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.mechanics-section-image {
+  width: 570px;
+  height: 413px;
+}
+
+.mechanics-section-image img,
+.video-section-image img {
   width: 100%;
   height: 100%;
   border-radius: 4px;
@@ -433,23 +544,12 @@ body{
   transition: transform 0.3s ease;
 }
 
-.mechanics-section-image, .video-section-image{
-  box-shadow: 0 0 10px 1px rgb(191, 191, 191);
-  position: relative;
-  overflow: hidden;
-  border-radius: 4px; 
-}
-
-.mechanics-section-image{
-  width: 570px;
-  height: 413px;
-}
-
-.mechanics-section-image:hover img, .video-section-image:hover img{
+.mechanics-section-image:hover img,
+.video-section-image:hover img {
   transform: scale(1.05);
 }
 
-.image-overlay{
+.image-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -464,211 +564,131 @@ body{
   transition: opacity 0.3s ease;
 }
 
-.image-overlay p{
+.image-overlay p {
   font-size: 25px;
 }
 
-.video-section-image .image-overlay p{
+.video-section-image .image-overlay p {
   font-size: 15px;
 }
 
-.mechanics-section-image:hover .image-overlay, .video-section-image:hover .image-overlay{
+.mechanics-section-image:hover .image-overlay,
+.video-section-image:hover .image-overlay {
   opacity: 0.5;
 }
 
-body{
-  overflow-y: scroll;
+figure.mechanics-section-image {
+  margin: 0;
 }
 
-#mechanics-bottom{
+#mechanics-bottom {
   width: 1180px;
   margin: 0 auto;
   margin-top: 50px;
 }
 
-#mechanics-bottom img{
+#mechanics-bottom img {
   width: 100%;
   aspect-ratio: 16/9;
 }
 
-.video-card{
-  width: 250px;
-  margin-top: 60px;
-  margin-right: 61px;
-}
-
-.video-card img{
-  margin: 0 auto;
-}
-
-#video-section{
-  display: flex;
-  margin-top: -40px;
-}
-
-#video-section-left{
-  margin-right: 55px;
-  display: flex;
-}
-
-#video-section-right{
-  margin-left: 55px;
-  display: flex;
-}
-
-.video-section-image{
-  width: 250px;
-  height: 200px;
-}
-
-#middle-line{
-  width: 2px;
-  height: 690px;
-  background-color: rgb(173, 173, 173);
-  margin-top: 60px;
-}
-
-figcaption{
-  text-align: center;
-}
-
-dt{
-  display: flex;
-}
-
-figure.mechanics-section-image{
-  margin: 0;
-}
-
-#introduction, #evolution{
-  margin-top: 30px;
-  border: 2px solid rgb(224, 224, 224);
-  border-radius: 4px;
-  background-color: #f5f5f5;
-  /*box-shadow: 0 0 20px 1px rgb(231, 231, 231);*/
-}
-
-#introduction img, #evolution img{
-  margin: 0;
-  width: 300px;
-}
-
-.home-box-content{
-  display: flex;
-  padding: 20px;
-}
-
-#introduction figure, #evolution figure{
-  margin: 0;
-  padding-left: 50px;
-}
-
-#introduction figure figcaption{
-  width: 200px;
-  margin: 0 auto;
-}
-
-#bottom-box{
-  position: relative;
-  background: linear-gradient(135deg, #e5e5e5, #cfcfcf);
-  width: 100%;
-  border-radius: 4px;
-}
-
-#bottom-h2{
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 22px;
-  text-align: center;
-  margin-left: 20px;
-}
-
-#bottom-images img{
-  width: 250px;
-  margin-top: -40px;
-}
-
-#bottom-box-content{
-  padding: 20px;
-  display: flex;
-}
-
-#left-box{
-  padding-right: 30px;
-}
-
-#mechanics-bottom-text{
+#mechanics-bottom-text {
   background: linear-gradient(135deg, #e5e5e5, #cfcfcf);
   border-radius: 4px;
   width: 1180px;
   margin: 0 auto;
 }
 
-#mechanics-bottom-text h2{
+#mechanics-bottom-text h2 {
   margin-top: 0;
   text-align: center;
 }
 
-#bottom-text-content{
+#bottom-text-content {
   padding: 20px;
   display: flex;
 }
 
-.mechanics-h2{
-  border-bottom: 2px solid rgba(0,0,0,0.1);
-  background: rgba(255,255,255,0.3);
+#mechanics-bottom-top {
+  display: flex;
+}
+
+.mechanics-h2 {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.3);
   width: 100%;
   padding-top: 1px;
-  border-radius: 4px 4px 0 0 ;
+  border-radius: 4px 4px 0 0;
   text-align: left;
 }
 
-.mechanics-h2 h2{
+.mechanics-h2 h2 {
   padding-top: 20px;
   padding-right: 20px;
   text-align: right;
 }
 
-.mechanics-section-text-2 .mechanics-h2 h2{
+.mechanics-section-text-2 .mechanics-h2 h2 {
   padding-top: 20px;
   padding-left: 20px;
   text-align: left;
 }
 
-#mechanics-bottom-top{
-  display: flex; 
+.video-card {
+  width: 250px;
+  margin-top: 60px;
+  margin-right: 61px;
 }
 
-.advice-image{
+.video-card img {
+  margin: 0 auto;
+}
+
+#video-section {
+  display: flex;
+  margin-top: -40px;
+}
+
+#video-section-left {
+  margin-right: 55px;
+  display: flex;
+}
+
+#video-section-right {
+  margin-left: 55px;
+  display: flex;
+}
+
+.video-section-image {
+  width: 250px;
+  height: 200px;
+}
+
+.advice-image {
   width: 160px !important;
-  height: 120px; 
+  height: 120px;
 }
 
-#legal-content{
+/* LEGAL PAGE */
+
+#legal-content {
   margin-top: 35px;
   border-radius: 4px;
   border: 2px solid rgb(224, 224, 224);
   background-color: #f5f5f5;
 }
 
-#legal-content-text{
+#legal-content-text {
   padding: 20px;
 }
 
-#legal, #legal-top{
+#legal,
+#legal-top {
   padding-bottom: 20px;
   border-bottom: 2px solid rgb(224, 224, 224);
 }
 
-#legal, #legal-bottom{
+#legal,
+#legal-bottom {
   margin-top: 20px;
-}
-
-.roboto-bold{
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 16px;
-  margin: 0;
 }
