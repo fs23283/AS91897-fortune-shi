@@ -682,13 +682,13 @@ figure.mechanics-section-image {
   padding: 20px;
 }
 
-#legal,
+.legal,
 #legal-top {
   padding-bottom: 20px;
   border-bottom: 2px solid rgb(224, 224, 224);
 }
 
-#legal,
+.legal,
 #legal-bottom {
   margin-top: 20px;
 }
