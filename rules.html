@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--The head area contains all setup information for the website: linking, meta tags and title.-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn basic formats and rules for Smogon.">
     <title>StratMon - Rules</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css"> <!--linking to the style sheet so page appearance can be changed-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--linking to google fonts so that the fonts can be used within css to apply fonts to the page-->
     <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&family=Zen+Dots&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
 </head>
-<body>
-    <header>
+<body> <!--main content of legal page-->
+    <header><!--header of page with iamges to make it looks more interesting-->
         <div id="upper-header">
             <div id="greninja-div">
                 <img src="images/greninja.png" alt="Greninja" id="greninja">
@@ -25,7 +26,7 @@
                 <img src="images/zeraora.png" alt="Zeraora" id="zeraora">
             </div>
         </div>
-        <nav>
+        <nav> <!--nav bar which improves usability of the website as it allows the user to navigate.-->
             <ul>
                 <li class="nav-font"><a href="index.html"><img src="images/nav-icons/pikachu.png" alt="pikachu-icon">Home</a></li>
                 <li class="nav-font" style="background-color: #3f3f3f"><a href="#"><img src="images/nav-icons/pokeball.png" alt="pokeball-icon">Rules</a></li>
@@ -34,36 +35,36 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="content">
-            <h1 class="roboto-h1">StratMon - Competitive Rules</h1>
-            <aside id="grey-box">
+    <main><!--main content of page-->
+        <section id="content"><!--extra box for padding-->
+            <h1 class="roboto-h1">StratMon - Competitive Rules</h1> 
+            <aside id="grey-box"> <!--grey box note - brief description of the page-->
                 <p class="grey-box-text">This page addresses the rules of Smogon. But feel free anytime to investigate <a href="https://pokemonshowdown.com/" target="_blank" class="text-link">Pokémon Showdown</a> yourself! For clarity, the formats are split into 4 main categories, which all belong to Smogon University.</p>
                 <br>
                 <p class="grey-box-text">Note: We do not own any assets that are used within this website; they are all under the legal control of Game Freak. All rights reserved ©. For more information, navigate to <a href="legal.html" class="text-link">Legal.</a></p>
             </aside>
-            <div id="boxes">
-                <div id="left-box">
-                    <section id="top-left-box">
-                        <div class="top-left-h2">
+            <div id="boxes"> <!--full flexbox container for all 4 boxes on the page to that they can all be organised into a grid-->
+                <div id="left-box"> <!--group into a left box so 2 boxes can be vertically positioned on the left of the horizontal flexbox-->
+                    <section id="top-left-box"> <!--the top left box which explains the smogon tiers split into a h2 section and a text section-->
+                        <div class="top-left-h2"> 
                             <h2 class="roboto-h2-center">Smogon Tiers</h2>
                         </div>
-                        <article class="box-content">
+                        <article class="box-content"> <!--box content for padding to add a space border to the content-->
                             <p class="roboto-p">This is the most structured category of Smogon formats. Pokémon are ranked by statistics based on usage competitively, then placed into their individual tiers. The tiers include: OU (OverUsed), UU (UnderUsed), RU (Rarely Used), NU (Never Used), PU, and Ubers. </p>
                             <br>
                             <p class="roboto-p">However, certain Pokémon are banned if they are considered to be too strong for their environment. Examples of this could be:</p>
                             <br>
-                            <ul class="roboto-p">
+                            <ul class="roboto-p"> <!--small list for examples of OP banned pokemon-->
                                 <li>Flutter Mane in OU due to its extreme speed and special attack.</li>
                                 <li>Volcarona for its typing and Quiver Dance move.</li>
                             </ul>
-                            <figure class="box-images">
+                            <figure class="box-images"> <!--using a flex box for the images for better organization-->
                                 <img src="images/flutter-mane.png" alt="flutter mane">
-                                <img src="images/volcarona.png" alt="volcarona">
+                                <img src="images/volcarona.png" alt="volcarona"> <!--again, using a figure and figcaption to make it easier for screen readers to identify this for the user with visual impairments.-->
                             </figure>
                             <figcaption class="description">Examples of banned Pokémon in OU</figcaption>
                         </article>
-                    </section>
+                    </section> <!--the rest of the 3 boxes are structured the same-->
                     <section id="bottom-left-box">
                         <div class="top-left-h2">
                             <h2 class="roboto-h2-center">Random Battles</h2>
@@ -72,7 +73,7 @@
                             <p class="roboto-p">Random Battles removes the team-building aspect; instead it gives each player a randomly generated team. These teams are roughly balanced, with standard movesets for each Pokémon (which can vary depending on luck). Levels are also adjusted so all Pokémon have even strength.</p>
                             <br>
                             <p class="roboto-p">The aim of this mode is to develop a player's adaptability and in-game descision-making. However, there is still an element of luck involved, as some matchups are favoured more than others.</p>
-                            <figure class="box-images">
+                            <figure class="box-images"> 
                                 <img src="images/smeargle.png" alt="smeargle">
                                 <img src="images/spectier.png" alt="spectrier">
                             </figure>
@@ -80,7 +81,7 @@
                         </article>
                     </section>
                 </div>
-                <div id="right-box">
+                <div id="right-box"> <!--group into a right box so 2 boxes can be vertically positioned on the right of the horizontal flexbox-->
                     <section id="top-right-box">
                         <div class="top-left-h2">
                             <h2 class="roboto-h2-center">VGC</h2>
@@ -115,15 +116,15 @@
                     </section>
                 </div>
             </div>
-            <section id="bottom-box">
-                <div class="top-left-h2">
+            <section id="bottom-box"> <!--the bottom section of the rules page will offer information of additional rules of pokemon showdown classified in its own grey box-->
+                <div class="top-left-h2"> <!--again, the h2 heading is isolated from the text of the box content to better identify what the card is about-->
                     <h2 id="bottom-h2">Other Rules - Mods</h2>
                 </div>
-                <article id="bottom-box-content">
+                <article id="bottom-box-content"> <!--padding for the text and orders everything into a manageable box-->
                     <article>
                         <p class="roboto-p">These are the core "clauses/mods" that are put in place in certain gamemodes, to make it fair for everyone.</p>
                         <br>
-                        <ul class="roboto-p">
+                        <ul class="roboto-p"> <!--a list of mods and clauses in pokemon showdown - added emojis so that the user can relate this instantly to an idea - recognition rather than recall. i did this throughout the website. just to clarify this isnt chatgpt, humans can use emojis too!-->
                             <li>😴 Sleep Clause Mod - You can only put one of your opponents Pokémon to sleep at a time.</li>
                             <li>👥 Species Clause - You cannot have a duplicate Pokémon in a team.</li>
                             <li>🎯 Evasion Clause - Moves that increase evasion (Double Team, Miminise) are banned.</li>
@@ -135,7 +136,7 @@
                         <br>
                         <p class="roboto-p">For more battle-specific tips navigate to <a href="mechanics.html" class="text-link">Mechanics</a></p>
                     </article>
-                    <figure id="bottom-images">
+                    <figure id="bottom-images"> <!--another figure - figcaption structure like mentioned above-->
                         <img src="images/snorlax.png" alt="snorlax">
                         <figcaption class="description">A pokemon centered around sleep.</figcaption>
                     </figure>
@@ -143,7 +144,7 @@
             </section>
         </section>
     </main>
-    <footer class="roboto">
+    <footer class="roboto"> <!--footer for more navigation of external hyperlinks and to give a visual close to the page. will be used consistently throughout the website-->
         <p class="roboto">StratMon | Developed by Fortune Shi for AS91897</p>
         <ul>
             <li><a href="https://www.instagram.com/strat.mon/" target="_blank"><img src="images/socials/instagram.png" alt="instagram"></a></li>
