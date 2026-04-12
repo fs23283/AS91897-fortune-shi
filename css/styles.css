@@ -338,6 +338,10 @@ footer ul li {
   padding: 20px;
 }
 
+.home-box-content img {
+  border-radius: 4px;
+}
+
 #introduction img,
 #evolution img {
   margin: 0;
@@ -482,6 +486,10 @@ footer ul li {
 #bottom-box-content {
   padding: 20px;
   display: flex;
+}
+
+#bottom-images{
+  margin-bottom: 0;
 }
 
 #bottom-images img {
@@ -674,7 +682,7 @@ figure.mechanics-section-image {
 #legal-content {
   margin-top: 35px;
   border-radius: 4px;
-  border: 2px solid rgb(224, 224, 224);
+  border: 2px solid #e0e0e0;
   background-color: #f5f5f5;
 }
 
